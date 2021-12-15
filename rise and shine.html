@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+        <html>
+        
+                <head>
+                       
+                        <meta charset="UTF-8">
+                        <meta name= "viewpoint" content="width-device-width, initial-scale=1.0">
+                        <link rel="https://fonts.googleapis.com/css2?family=poppins:wght@600&display=swap" rel="stylesheet">
+    
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous"  />
+                        <link rel="stylesheet" href="rise and shine.css">
+                        <title> To do list </title>
+                        
+        <script defer src= "rise and shine.js"></script> 
+                </head>
+                <body>
+                
+        
+                        <div class= "menubar">
+                                <div class="container flex">
+                                <div class="logo kicks">  The PRIME<span> ToDo</span>
+                                </div>
+                             </div>
+                            </div>
+           
+<div class="app">
+
+                <h1 class="title">Add Your TODO's</h1>
+
+             <div class="all-task" >
+                     <h2 class="task-list-title">ToDo's</h2>
+                     <ul class="task-list" datalists></ul>
+
+                     <form action="" data-new-list-form>
+                             <input type="text" 
+                             class="new list"
+                             data-new-list-input
+                              placeholder="New List Name" 
+                              aria-label="new list Name"
+                              />
+                             <button class="btn create"aria-label=" create new list ">+</button>
+                     </form>
+             </div>
+        
+        
+               <div class="ToDo-list" data-list-display-container>
+                 <div class="todo-header">
+                        <h2 class="list-title" data-list-title>My Day</h2>
+                        <p class="task-count" data-list-count> 4 tasks remaining</p>
+                 </div> 
+
+             
+                <div class="ToDo-body">
+               <div class="tasks" data-tasks >
+        
+                                 </div>
+
+           
+                <div class="new-task-creator">
+                         <form action="" data-new-task-form >
+                                 <input type="text" 
+                                 data-new-task-input 
+                                class="new task"
+                                 placeholder="new task name" 
+                                 aria-label="new task name"
+                                 />
+                                <button class="btn create"   aria-label=" create new task ">+</button>
+                         </form>
+                </div>
+
+                <div class="delete-stuff">
+                         <button class="btn delete"
+                         data-clear-complete-task-button>Clear completed task</button>
+                         <button class="btn delete" data-delete-list-button> Delete list</button>
+                </div>
+
+              </div>
+             </div>
+             </div>
+ 
+         
+</div> 
+<template id="task-templete">
+<div class="task" >                         
+        <input type="checkbox"/>
+        <label>
+        <span class="custom-checkbox"></span>      
+        </label>
+</div>
+</templete>
+ </body>
+ </html>
